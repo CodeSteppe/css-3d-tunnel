@@ -31,10 +31,10 @@ body {
   filter: hue-rotate(calc(24deg * var(--i)));
   transform-style: preserve-3d;
   animation-name: move;
-  animation-duration: 20s;
+  animation-duration: 30s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-delay: calc(1s * var(--i) - 20s);
+  animation-delay: calc(1s * var(--i) - 30s);
 }
 
 @keyframes move {
@@ -44,6 +44,6 @@ body {
   }
   /* 5s */
   100% {
-    transform: perspective(1000px) translateZ(1000px) rotate(130deg);
+    transform: perspective(1000px) translateZ(1000px) rotate(180deg);
   }
 }
