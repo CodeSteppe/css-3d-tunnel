@@ -13,16 +13,15 @@ body {
   background-color: #000;
 }
 
-.menus {
+.tunnel {
   position: relative;
   width: 100px;
   height: 100px;
 }
 
-button {
+.frame {
   width: 100%;
   height: 100%;
-  /* border-radius: 50%; */
   border-width: 1px;
   border-style: solid;
   border-color: rgb(40, 255, 212);
@@ -31,15 +30,14 @@ button {
   background-color: transparent;
   filter: hue-rotate(calc(24deg * var(--i)));
   transform-style: preserve-3d;
-  animation-name: count;
+  animation-name: move;
   animation-duration: 20s;
   animation-timing-function: linear;
-  animation-delay: calc(1s * var(--i) - 20s);
   animation-iteration-count: infinite;
-  /* animation-fill-mode: both; */
+  animation-delay: calc(1s * var(--i) - 20s);
 }
 
-@keyframes count {
+@keyframes move {
   /* 0s */
   0% {
     transform: perspective(1000px) translateZ(0px) rotate(0deg);
