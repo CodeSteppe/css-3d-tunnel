@@ -9,8 +9,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   background-color: #000;
+  overflow: hidden;
 }
 
 .tunnel {
@@ -24,11 +24,10 @@ body {
   height: 100%;
   border-width: 1px;
   border-style: solid;
-  border-color: rgb(40, 255, 212);
-  outline: none;
-  position: absolute;
-  background-color: transparent;
+  border-color: rgb(0, 255, 162);
   filter: hue-rotate(calc(24deg * var(--i)));
+  position: absolute;
+
   transform-style: preserve-3d;
   animation-name: move;
   animation-duration: 30s;
@@ -38,12 +37,10 @@ body {
 }
 
 @keyframes move {
-  /* 0s */
-  0% {
+  from {
     transform: perspective(1000px) translateZ(0px) rotate(0deg);
   }
-  /* 5s */
-  100% {
+  to {
     transform: perspective(1000px) translateZ(1000px) rotate(180deg);
   }
 }
